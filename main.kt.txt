@@ -1,1 +1,65 @@
+fun main() {
+   for (i in 1..5) {
+       
+         // Calculer le nombre d'espaces
+     val numberOfSpaces = i - 1
+        for (j in 1..numberOfSpaces) {
+            print(" ")
+        }
+        
+        // Calculer le nombre d'étoiles
+     val numberOfStars = 6 - i
+        for (j in 1..numberOfStars) {
+            print("*")
+        }
+
+        println() // nouvelle ligne
+    }
+   
+   println() // ligne vide pour séparer les tasks
+
+  
+    // Task 2  
+   
+ for (i in 1..5) {
+
+        val numberOfSpaces = i - 1
+        for (j in 1..numberOfSpaces) {
+            print(" ")
+        }
+
+        val numberOfStars = 11 - i * 2
+        for (j in 1..numberOfStars) {
+            print("*")
+        }
+
+        println()
+    }
+    println() 
+ 
+    // Task 3
+    val height = 5
+
+    
+    for (i in 1..height) {
+        val numberOfSpaces = height - i
+        for (j in 1..numberOfSpaces) print(" ")
+
+        val numberOfStars = i
+        for (j in 1..numberOfStars) print("*")
+
+        println()
+    }
+
+    
+    for (i in (height - 1) downTo 1) {
+        val numberOfSpaces = height - i
+        for (j in 1..numberOfSpaces) print(" ")
+
+        val numberOfStars = i
+        for (j in 1..numberOfStars) print("*")
+
+        println()
+    }
+}
 
